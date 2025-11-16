@@ -1,0 +1,4 @@
+
+body { font-family: Arial, sans-serif; margin: 40px; }
+.object-card { border: 1px solid #aaa; padding: 15px; margin-bottom: 15px; border-radius: 5px; }
+#filter-type, #filter-material { width: 200px; margin-right: 20px; padding: 5px; }
