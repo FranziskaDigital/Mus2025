@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Holzfigur",
+    "object_type": "sculpture",
+    "material": "wood",
+    "date": "1850",
+    "inventory_number": "INV-001",
+    "description": "Eine geschnitzte Holzfigur.",
+    "creator": 1
+  }
+]

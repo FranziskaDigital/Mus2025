@@ -1,0 +1,22 @@
+{
+  "object_types": {
+    "sculpture": {
+      "label": "Skulptur",
+      "uri": "http://vocab.getty.edu/aat/300047090"
+    },
+    "painting": {
+      "label": "Gem\u00e4lde",
+      "uri": "http://vocab.getty.edu/aat/300033618"
+    }
+  },
+  "materials": {
+    "wood": {
+      "label": "Holz",
+      "uri": "http://vocab.getty.edu/aat/300011914"
+    },
+    "metal": {
+      "label": "Metall",
+      "uri": "http://vocab.getty.edu/aat/300010957"
+    }
+  }
+}
