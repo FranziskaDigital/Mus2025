@@ -1,4 +1,5 @@
-
 body { font-family: Arial, sans-serif; margin: 40px; }
 .object-card { border: 1px solid #aaa; padding: 15px; margin-bottom: 15px; border-radius: 5px; }
-#filter-type, #filter-material { width: 200px; margin-right: 20px; padding: 5px; }
+label { font-weight: bold; display:block; margin-top:10px; }
+input, select, textarea { width: 100%; padding: 6px; margin-top:4px; border:1px solid #bbb; border-radius:4px; }
+#filter-type, #filter-material { width: 200px; margin-right: 20px; padding:5px; }

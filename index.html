@@ -2,71 +2,51 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Übungsdatenbank</title>
+    <title>Museums-Übungsdatenbank – Erweiterte Sammlungsdaten</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Museums-Übungsdatenbank – Minimaldatensatz</h1>
+<h1>Museums-Übungsdatenbank – Erweiterte Sammlungsdaten</h1>
 
 <h2>Filter</h2>
-
-<label>Nach Objektart filtern:
-    <select id="filter-type">
-        <option value="">Alle</option>
-    </select>
+<label>Nach Objekttyp filtern:
+    <select id="filter-type"><option value="">Alle</option></select>
 </label>
-
 <label>Nach Material filtern:
-    <select id="filter-material">
-        <option value="">Alle</option>
-    </select>
+    <select id="filter-material"><option value="">Alle</option></select>
 </label>
 
 <hr>
 
 <h2>Neues Objekt eingeben</h2>
 <form id="object-form">
-    <label>Titel:<br>
-        <input type="text" id="title" required>
-    </label><br><br>
-
-    <label>Objektart:<br>
-        <select id="object_type"></select>
-    </label><br><br>
-
-    <label>Material:<br>
-        <select id="material"></select>
-    </label><br><br>
-
-    <label>Datierung (Jahr):<br>
-        <input type="text" id="date">
-    </label><br><br>
-
-    <label>Inventarnummer:<br>
-        <input type="text" id="inventory_number" required>
-    </label><br><br>
-
-    <label>Beschreibung:<br>
-        <textarea id="description"></textarea>
-    </label><br><br>
-
+    <label>Inventarnummer:<br><input type="text" id="Inventarnummer" required></label><br>
+    <label>Objekttitel:<br><input type="text" id="Objekttitel" required></label><br>
+    <label>Objekttyp:<br><input type="text" id="Objekttyp"></label><br>
+    <label>Objektbeschreibung:<br><textarea id="Objektbeschreibung"></textarea></label><br>
+    <label>Datierung (Anfang):<br><input type="text" id="Datierung_Anfang"></label><br>
+    <label>Datierung (Ende):<br><input type="text" id="Datierung_Ende"></label><br>
+    <label>Material:<br><input type="text" id="Material"></label><br>
+    <label>Maße:<br><input type="text" id="Maße"></label><br>
+    <label>Ereignis in der Objektgeschichte:<br><textarea id="Ereignis_Objektgeschichte"></textarea></label><br>
+    <label>Inhaltsschlagwort:<br><input type="text" id="Inhaltsschlagwort"></label><br>
+    <label>Mediendatei:<br><input type="text" id="Mediendatei"></label><br>
+    <label>Bemerkungen:<br><textarea id="Bemerkungen"></textarea></label><br>
     <button type="submit">Objekt hinzufügen</button>
 </form>
 
 <hr>
 
 <h2>CSV importieren</h2>
-<p>Die CSV muss die Spalten enthalten:<br>
-<code>id, title, object_type, material, date, inventory_number, description, creator</code></p>
+<p>Die CSV muss die Spalten enthalten:</p>
+<code>id, Inventarnummer, Objekttitel, Objekttyp, Objektbeschreibung, Datierung_Anfang, Datierung_Ende, Material, Maße, Ereignis_Objektgeschichte, Inhaltsschlagwort, Mediendatei, Bemerkungen</code>
 <input type="file" id="csv-input" accept=".csv">
-<br><br>
 
 <hr>
 
 <h2>Objekte</h2>
 <div id="object-list"></div>
-
 <br>
 <button id="export-btn">Alle Objekte als CSV exportieren</button>
 
